@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_self.png"
+  avatar           : "/images/profile_self.png"
   name             : "Liang siyuan"
   pronouns         : "he/him"  
   major              : "Statistic"
