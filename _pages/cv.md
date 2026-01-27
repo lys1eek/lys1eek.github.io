@@ -11,18 +11,20 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Mathematics, Hua Loo-Keng Class (Elite Mathematics Program),University of Science and Technology of China
+* **B.Sc. in Mathematics**, Hua Loo-Keng Class (Elite Mathematics Program), University of Science and Technology of China
 
-
-
-Research expercice
+Research Experience
 ======
-Nothing
-  
+* Nothing
+
 Teaching
 ======
-*Teaching Assistant, "Linear Algebra B1",Sep. 2025 -- Jan. 2026
-  
-Service and leadership
+* **Teaching Assistant**, "Linear Algebra B1", Sep. 2025 -- Jan. 2026
 
-**To See my full CV,you can download here(pdf)** [CV](https://github.com/lys1eek/lys1eek.github.io/tree/master/files/CV.pdf)
+Service and Leadership
+======
+* (To be added)
+
+---
+
+**To see my full CV, please download the PDF version:** [[Download CV]](/files/CV.pdf)
