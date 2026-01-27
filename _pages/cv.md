@@ -25,4 +25,4 @@ Teaching
   
 Service and leadership
 
-**To See my full CV,you can download here** [CV]()
+**To See my full CV,you can download here(pdf)** [CV](https://github.com/lys1eek/lys1eek.github.io/tree/master/files/CV.pdf)
