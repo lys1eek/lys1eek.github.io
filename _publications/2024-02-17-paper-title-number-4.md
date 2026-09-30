@@ -1,6 +1,7 @@
 ---
 title: "Undergraduate Thesis (In Progress)"
 collection: publications
+published: false
 category: conferences
 permalink: /publication/undergraduate-thesis
 date: 2025-01-27

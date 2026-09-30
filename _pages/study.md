@@ -7,35 +7,27 @@ author_profile: true
 
 {% include base_path %}
 
-Here, I document my academic journey at USTC, including selected coursework with high distinctions, personal study notes, and my self-learning roadmap.
+Here, I document my academic journey at USTC, including selected coursework, personal study notes, and my self-learning roadmap.
 
 ## 🏫 Selected Coursework
 
-*Linear Algebra A2(96)*
-
-*Advanced Mathematical Statistics(95)*
-
-*Functional Analysis(93)*
-
-*Foundations of Artificial Intelligence and Machine Learning(minor courses)*
-
-*Operations Research(in progress)*
-
-*probability(in progress)*
+- Linear Algebra A2 (**96/100**)
+- Advanced Mathematical Statistics (**95/100**)
+- Mathematical Analysis A1 (**91/100**)
+- Functional Analysis (**93/100**)
+- Operations Research (**87/100**)
+- Optimization Algorithms (**87/100**)
+- Probability Theory (**85/100**)
 
 ## 📝 Study Notes
 
 Here are some lecture notes during and answers during being teaching assistant for **Linear Algebra B1** 2025 autumn.
 
 ## 🗺️ Self-Learning Roadmap
-In the next semester(The second semester of the junior year),I will mainly focus on those courses:
+During my fourth year at USTC, I plan to independently study courses in the following areas:
 
-*Optimization algorithm
-
-*Multivariate Analysis A
-
-*Probability Theory(Retake)
-
-*Foundation of Deep Learning(minor courses)
+- Deep learning
+- Reinforcement learning
+- Foundations of modern large language models (LLMs)
 
 
