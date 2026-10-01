@@ -1,3 +1,6 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% unless page.layout == 'academic' %}
+  <script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% endunless %}
+<script src="{{ base_path }}/assets/js/academic.js" defer></script>
 
 {% include analytics.html %}

@@ -5,9 +5,11 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "About"
+    url: /
   - title: "Study"
     url: /study/
   - title: "CV"
-    url: /files/CV.pdf
+    url: /files/Siyuan_Liang_Academic_CV.pdf
+  - title: "Publications"
+    url: /publications/

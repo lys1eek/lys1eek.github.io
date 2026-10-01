@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<main id="main" class="academic-main" tabindex="-1">
+  {% if page.profile_header %}
+    {% include profile-header.html %}
+  {% else %}
+    <header class="academic-page-heading">
+      {% if page.eyebrow %}<p class="academic-eyebrow">{{ page.eyebrow }}</p>{% endif %}
+      <h1>{{ page.title }}</h1>
+    </header>
+  {% endif %}
+
+  <article class="academic-content{% if page.profile_header %} academic-content--home{% endif %}">
+    {{ content }}
+  </article>
+</main>
