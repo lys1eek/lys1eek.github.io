@@ -1,0 +1,66 @@
+en:
+  html_lang: en
+  locale: en_US
+  home: /
+  name: Liang Siyuan
+  other_name: 梁思源
+  other_name_lang: zh-Hans
+  skip: Skip to content
+  menu: Menu
+  navigation_label: Main navigation
+  language_label: Language
+  profile_links_label: CV and contact links
+  undergraduate: USTC · Undergraduate
+  field: Probability and Statistics
+  summary: Machine learning, stochastic optimization, and the mathematical foundations of AI.
+  email: Email
+  follow: "Follow:"
+  feed: Feed
+  sitemap: Sitemap
+  updated: Site last updated
+  navigation:
+    about:
+      title: About
+      url: /
+    study:
+      title: Study
+      url: /study/
+    cv:
+      title: CV
+      url: /files/Siyuan_Liang_Academic_CV.pdf
+    publications:
+      title: Publications
+      url: /publications/
+zh:
+  html_lang: zh-Hans
+  locale: zh_CN
+  home: /zh/
+  name: 梁思源
+  other_name: Liang Siyuan
+  other_name_lang: en
+  skip: 跳转到正文
+  menu: 菜单
+  navigation_label: 主导航
+  language_label: 语言
+  profile_links_label: 简历与联系方式
+  undergraduate: 中国科学技术大学 · 本科生
+  field: 概率与统计
+  summary: 关注机器学习、随机优化，以及人工智能的数学基础。
+  email: 邮箱
+  follow: "关注："
+  feed: 订阅
+  sitemap: 站点地图
+  updated: 网站最后更新于
+  navigation:
+    about:
+      title: 关于
+      url: /zh/
+    study:
+      title: 学习
+      url: /zh/study/
+    cv:
+      title: 简历
+      url: /files/CV.pdf
+    publications:
+      title: 学术成果
+      url: /zh/publications/

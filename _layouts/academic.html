@@ -3,6 +3,8 @@ layout: default
 ---
 
 {% include base_path %}
+{% assign language = page.lang | default: "en" %}
+{% assign labels = site.data.locales[language] %}
 
 <main id="main" class="academic-main" tabindex="-1">
   {% if page.profile_header %}

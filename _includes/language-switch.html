@@ -1,0 +1,11 @@
+{% if language == 'zh' %}
+  {% assign english_url = page.translation_url | default: '/' %}
+  {% assign chinese_url = page.url %}
+{% else %}
+  {% assign english_url = page.url %}
+  {% assign chinese_url = page.translation_url | default: '/zh/' %}
+{% endif %}
+<nav class="academic-language-switch" aria-label="{{ labels.language_label }}">
+  <a href="{{ base_path }}{{ english_url }}" lang="en" hreflang="en" title="Switch to English"{% if language == 'en' %} aria-current="true"{% endif %}>EN</a>
+  <a href="{{ base_path }}{{ chinese_url }}" lang="zh-Hans" hreflang="zh-Hans" title="切换到中文"{% if language == 'zh' %} aria-current="true"{% endif %}>中文</a>
+</nav>

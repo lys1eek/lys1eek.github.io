@@ -3,15 +3,17 @@ layout: compress
 ---
 
 {% include base_path %}
+{% assign language = page.lang | default: "en" %}
+{% assign labels = site.data.locales[language] %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<html lang="{{ labels.html_lang }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body class="academic-site{% if page.layout == 'academic' %} academic-site--page{% endif %}">
+  <body class="academic-site{% if page.layout == 'academic' %} academic-site--page{% endif %}{% if language == 'zh' %} academic-site--zh{% endif %}">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

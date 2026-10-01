@@ -41,6 +41,8 @@ html {
   margin: 0 !important;
 }
 
+.academic-site--zh { line-height: 1.9; }
+
 .academic-skip-link {
   position: fixed;
   top: 0.75rem;
@@ -94,6 +96,30 @@ html {
 }
 
 .academic-nav__item { margin: 0; }
+
+.academic-nav { min-width: 0; margin-left: auto; }
+
+.academic-language-switch {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 2px;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0.25rem 0.45rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-decoration: none;
+    border-radius: 2px;
+    &[aria-current="true"] { background: $wine; color: $paper; }
+  }
+}
 
 .academic-site .academic-nav__link {
   display: block;
@@ -327,19 +353,18 @@ html {
   font-size: 0.6875rem;
 }
 
-.academic-site .coursework-table {
-  display: table;
-  width: 100%;
+.coursework-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
   margin: 1.25rem 0 2rem;
-  border: 0;
-  border-collapse: collapse;
+  padding: 0;
+  list-style: none;
   font-family: $sans;
-  font-size: 0.9375rem;
-  thead { border: 0; background: #f2eee5; }
-  th, td { padding: 0.75rem 0; border: 0; border-bottom: 1px solid $rule; background: transparent; }
-  thead th { color: $muted-ink; font-size: 0.75rem; font-weight: 400; }
-  tbody th { padding-right: 1rem; font-weight: 400; text-align: left; }
-  td, thead th:last-child { width: 5rem; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  font-size: 1rem;
+  line-height: 1.6;
+  li { margin: 0; padding: 0.85rem 0; border-bottom: 1px solid $rule; }
+  li:last-child { grid-column: 1 / -1; }
 }
 
 .roadmap-list {
@@ -391,12 +416,18 @@ html {
 
 @media (max-width: 640px) {
   .academic-site { font-size: 1.0625rem; line-height: 1.65; }
-  .academic-masthead__inner { position: relative; gap: 1rem; min-height: 68px; padding: 0 1.25rem; }
+  .academic-masthead__inner { position: relative; flex-wrap: wrap; gap: 0.5rem; min-height: 68px; padding: 0.5rem 1.25rem; }
   .academic-brand { font-size: 1.125rem !important; }
+  .academic-language-switch { order: 2; margin-left: auto; }
+  .academic-nav { order: 3; width: 100%; margin-left: 0; }
   .academic-nav__links { gap: 0.7rem; flex-wrap: wrap; }
   .academic-nav__link { font-size: 0.8125rem !important; }
   .js .academic-nav.is-enhanced {
-    .academic-nav__toggle { display: inline-flex; }
+    order: 1;
+    width: auto;
+    margin-left: auto;
+    .academic-nav__toggle { display: inline-flex; min-width: 44px; padding: 0.55rem 0.7rem; }
+    .academic-nav__toggle span { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
     .academic-nav__links { display: none; }
     &.is-open .academic-nav__links {
       position: absolute;
@@ -414,6 +445,7 @@ html {
     }
     .academic-nav__link { min-height: 44px; padding: 0.65rem 0; border-bottom-width: 1px; }
   }
+  .js .academic-nav.is-enhanced + .academic-language-switch { margin-left: 0; }
   .academic-site #main.academic-main { padding: 2rem 1.25rem 3rem; }
   .profile-header__identity { gap: 1rem; h1 { font-size: 2rem; span { display: block; margin: 0.35rem 0 0; font-size: 0.875rem; } } }
   .profile-header__avatar { width: 80px; height: 80px; }
@@ -427,6 +459,7 @@ html {
   .academic-page-heading { margin-bottom: 2rem; h1 { font-size: 2.125rem; } }
   .contact-list > div { grid-template-columns: minmax(0, 1fr); gap: 0.2rem; padding: 0.75rem 0; }
   .contact-list dt { color: $muted-ink; font-size: 0.75rem; }
+  .coursework-list { grid-template-columns: minmax(0, 1fr); }
   .academic-site .page__footer footer { padding: 1.25rem; }
 }
 
@@ -457,5 +490,5 @@ html {
   .academic-site .academic-button { border-color: #aaa; background: transparent; color: #000; }
   .academic-site a { color: #000; }
   .internship-note { background: transparent; break-inside: avoid; }
-  .coursework-table tr, .contact-list > div { break-inside: avoid; }
+  .coursework-list li, .contact-list > div { break-inside: avoid; }
 }

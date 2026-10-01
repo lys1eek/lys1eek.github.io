@@ -1,10 +1,10 @@
 <header class="profile-header">
   <div class="profile-header__identity">
-    <img class="profile-header__avatar" src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ site.author.name }}" width="112" height="112">
+    <img class="profile-header__avatar" src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ labels.name }}" width="112" height="112">
     <div>
-      <p class="academic-eyebrow">USTC · Undergraduate</p>
-      <h1>{{ site.author.name }} <span lang="zh-Hans">梁思源</span></h1>
-      <p class="profile-header__field">Probability and Statistics</p>
+      <p class="academic-eyebrow">{{ labels.undergraduate }}</p>
+      <h1>{{ labels.name }} <span lang="{{ labels.other_name_lang }}">{{ labels.other_name }}</span></h1>
+      <p class="profile-header__field">{{ labels.field }}</p>
     </div>
   </div>
 
@@ -12,12 +12,17 @@
     {% include math-signature.html %}
   </div>
 
-  <p class="profile-header__summary">Machine learning, stochastic optimization,<br class="profile-header__line-break"> and the mathematical foundations of AI.</p>
+  <p class="profile-header__summary">{{ labels.summary }}</p>
 
-  <nav class="profile-header__links" aria-label="CV and contact links">
+  <nav class="profile-header__links" aria-label="{{ labels.profile_links_label }}">
+    {% if language == 'zh' %}
+    <a class="academic-button academic-button--primary" href="{{ base_path }}/files/CV.pdf">中文简历 <span>(PDF)</span></a>
+    <a class="academic-button" href="{{ base_path }}/files/Siyuan_Liang_Academic_CV.pdf" lang="en">English CV <span>(PDF)</span></a>
+    {% else %}
     <a class="academic-button academic-button--primary" href="{{ base_path }}/files/Siyuan_Liang_Academic_CV.pdf">English CV <span>(PDF)</span></a>
     <a class="academic-button" href="{{ base_path }}/files/CV.pdf" lang="zh-Hans">中文简历 <span>(PDF)</span></a>
-    <a class="profile-header__text-link" href="mailto:{{ site.author.email }}">Email</a>
+    {% endif %}
+    <a class="profile-header__text-link" href="mailto:{{ site.author.email }}">{{ labels.email }}</a>
     <a class="profile-header__text-link" href="https://github.com/{{ site.author.github }}">GitHub</a>
   </nav>
 </header>

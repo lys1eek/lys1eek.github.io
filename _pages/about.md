@@ -4,6 +4,9 @@ permalink: /
 title: "About"
 author_profile: false
 profile_header: true
+lang: en
+page_key: about
+translation_url: /zh/
 redirect_from: 
   - /about/
   - /about.html

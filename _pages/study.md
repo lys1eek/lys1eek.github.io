@@ -4,32 +4,30 @@ title: "Study & Resources"
 permalink: /study/
 author_profile: false
 eyebrow: "Learning"
+lang: en
+page_key: study
+translation_url: /zh/study/
 ---
 
 {% include base_path %}
 
-Here, I document my academic journey at USTC, including selected coursework, personal study notes, and my self-learning roadmap.
+This page brings together selected coursework in probability, statistics, optimization, and artificial intelligence, teaching assistant materials, and my self-learning plans.
 
 ## Selected Coursework
 
-<table class="coursework-table">
-  <thead>
-    <tr><th scope="col">Course</th><th scope="col">Grade</th></tr>
-  </thead>
-  <tbody>
-    <tr><th scope="row">Linear Algebra A2</th><td>96/100</td></tr>
-    <tr><th scope="row">Advanced Mathematical Statistics</th><td>95/100</td></tr>
-    <tr><th scope="row">Mathematical Analysis A1</th><td>91/100</td></tr>
-    <tr><th scope="row">Functional Analysis</th><td>93/100</td></tr>
-    <tr><th scope="row">Operations Research</th><td>87/100</td></tr>
-    <tr><th scope="row">Optimization Algorithms</th><td>87/100</td></tr>
-    <tr><th scope="row">Probability Theory</th><td>85/100</td></tr>
-  </tbody>
-</table>
+<ul class="coursework-list">
+  <li>Advanced Mathematical Statistics</li>
+  <li>Advanced Probability Theory</li>
+  <li>Stochastic Processes</li>
+  <li>Limit Theory</li>
+  <li>Multivariate Statistical Analysis</li>
+  <li>Optimization Algorithms</li>
+  <li>Foundations of Artificial Intelligence and Machine Learning</li>
+</ul>
 
 ## 📝 Study Notes
 
-Here are some lecture notes during and answers during being teaching assistant for **Linear Algebra B1** 2025 autumn.
+Here are some lecture notes and solutions from my work as a teaching assistant for **Linear Algebra B1** in Fall 2025 and **Mathematical Analysis B1** in Fall 2026.
 
 ## Self-Learning Roadmap
 During my fourth year at USTC, I plan to independently study courses in the following areas:

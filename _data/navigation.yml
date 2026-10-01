@@ -6,10 +6,14 @@
 
 main:
   - title: "About"
+    key: about
     url: /
   - title: "Study"
+    key: study
     url: /study/
   - title: "CV"
+    key: cv
     url: /files/Siyuan_Liang_Academic_CV.pdf
   - title: "Publications"
+    key: publications
     url: /publications/
